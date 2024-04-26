@@ -1,0 +1,29 @@
+@import "./_mixins.scss";
+@import "./variables";
+
+.animation{
+    @include animation-display;
+    background-color: $background-animation;
+.text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 30px;
+   background-color:  $background-text-container;
+   text-align: center;
+   &:hover + .btn{
+    transform: translate(-60px);
+
+   }
+   transition: 400ms;
+   
+}
+.btn{
+    width:100px ;
+    height: 30px;
+    background-color: $background-btn;
+
+    
+}
+}
